@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Bitcount.ttf",
+      "sha1": "c6c04aa46119602c9cd9be6b99ac3ff862888f54"
+    },
+    {
+      "path": "assets/fonts/MirandaSans.ttf",
+      "sha1": "8ea48884e9f6cfad126b26fdbf0b1a0b26c84547"
+    }
+  ]
+}
