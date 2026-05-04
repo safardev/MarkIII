@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet } from 'react-native';
-import React from 'react';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useAppTheme } from '../context/ThemeContext';
 
 const Screen1 = () => {

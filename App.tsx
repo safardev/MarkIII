@@ -5,12 +5,16 @@ import {
   darkNavigationTheme,
   lightNavigationTheme,
 } from './src/constants/navigationTheme';
+import BootSplash from 'react-native-bootsplash';
 
 const AppContent = () => {
   const { isDarkMode } = useAppTheme();
 
   return (
     <NavigationContainer
+      onReady={async () => {
+        await BootSplash.hide({ fade: true });
+      }}
       theme={isDarkMode ? darkNavigationTheme : lightNavigationTheme}
     >
       <RootStack />

@@ -13,6 +13,8 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		48BCCD5226264DF4882A97B0 /* Bitcount.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB6055201B4B473EB8E85247 /* Bitcount.ttf */; };
 		A7A77E3674E14637B5F91FE5 /* MirandaSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48968CD9C39441CCB3782067 /* MirandaSans.ttf */; };
+		462201EBBF8B4D9394B825F3 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC87662DD484498BE50B48B /* BootSplash.storyboard */; };
+		1AAE2D3A23084F718085FC1E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FECF98040EC4F4484A3FD3C /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FB6055201B4B473EB8E85247 /* Bitcount.ttf */ = {isa = PBXFileReference; name = "Bitcount.ttf"; path = "../assets/fonts/Bitcount.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		48968CD9C39441CCB3782067 /* MirandaSans.ttf */ = {isa = PBXFileReference; name = "MirandaSans.ttf"; path = "../assets/fonts/MirandaSans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0FC87662DD484498BE50B48B /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "MarkIII/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3FECF98040EC4F4484A3FD3C /* Colors.xcassets */ = {isa = PBXFileReference; name = "Colors.xcassets"; path = "MarkIII/Colors.xcassets"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = folder.assetcatalog; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				0FC87662DD484498BE50B48B /* BootSplash.storyboard */,
+				3FECF98040EC4F4484A3FD3C /* Colors.xcassets */,
 			);
 			name = MarkIII;
 			sourceTree = "<group>";
@@ -176,6 +182,8 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				48BCCD5226264DF4882A97B0 /* Bitcount.ttf in Resources */,
 				A7A77E3674E14637B5F91FE5 /* MirandaSans.ttf in Resources */,
+				462201EBBF8B4D9394B825F3 /* BootSplash.storyboard in Resources */,
+				1AAE2D3A23084F718085FC1E /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
