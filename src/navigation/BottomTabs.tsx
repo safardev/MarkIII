@@ -18,6 +18,7 @@ const BottomTabs = () => {
         tabBarActiveTintColor: theme.text,
         tabBarInactiveTintColor: theme.secondaryText,
         tabBarActiveBackgroundColor: theme.border,
+        tabBarHideOnKeyboard: true,
         tabBarStyle: {
           backgroundColor: theme.card,
           borderTopColor: theme.border,
