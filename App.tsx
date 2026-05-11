@@ -6,19 +6,23 @@ import {
   lightNavigationTheme,
 } from './src/constants/navigationTheme';
 import BootSplash from 'react-native-bootsplash';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const AppContent = () => {
+  const queryClient = new QueryClient();
   const { isDarkMode } = useAppTheme();
 
   return (
-    <NavigationContainer
-      onReady={async () => {
-        await BootSplash.hide({ fade: true });
-      }}
-      theme={isDarkMode ? darkNavigationTheme : lightNavigationTheme}
-    >
-      <RootStack />
-    </NavigationContainer>
+    <QueryClientProvider client={queryClient}>
+      <NavigationContainer
+        onReady={async () => {
+          await BootSplash.hide({ fade: true });
+        }}
+        theme={isDarkMode ? darkNavigationTheme : lightNavigationTheme}
+      >
+        <RootStack />
+      </NavigationContainer>
+    </QueryClientProvider>
   );
 };
 

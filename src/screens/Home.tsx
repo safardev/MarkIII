@@ -60,56 +60,44 @@ const Home = ({ navigation }: any) => {
     <SafeAreaView
       style={[styles.container, { backgroundColor: theme.background }]}
     >
-      <FlatList
-        data={usersData}
-        keyExtractor={item => item.id.toString()}
-        renderItem={({ item }) => <User user={item} />}
-        ListHeaderComponent={
-          <>
-            <View>
-              <View style={styles.header}>
-                <Text style={styles.headerText}>MARK III</Text>
-              </View>
-              <Image
-                style={styles.ironImage}
-                source={require('../../assets/images/iron.png')}
-              />
-            </View>
-            <Button
-              title="Go to Settings"
-              onPress={() => navigation.navigate('Settings')}
+      <>
+        <View>
+          <View style={styles.header}>
+            <Text style={styles.headerText}>MARK III</Text>
+          </View>
+          <Image
+            style={styles.ironImage}
+            source={require('../../assets/images/iron.png')}
+          />
+        </View>
+        <Button
+          title="Go to Settings"
+          onPress={() => navigation.navigate('Settings')}
+        />
+        <Pressable
+          style={styles.s1Button}
+          android_ripple={{ color: '#5027f3' }}
+          onPress={() => navigation.navigate('Users')}
+        >
+          <Text style={styles.s1ButtonText}>Go to Users</Text>
+        </Pressable>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={{ paddingHorizontal: 16 }}
+          pagingEnabled
+        >
+          {imagUrl.map(item => (
+            <Image
+              key={item.id}
+              source={{ uri: item.url }}
+              resizeMode="stretch"
+              fadeDuration={300}
+              style={styles.rowImage}
             />
-            <Pressable
-              style={styles.s1Button}
-              android_ripple={{ color: '#5027f3' }}
-              onPress={() => navigation.navigate('Screen1')}
-            >
-              <Text style={styles.s1ButtonText}>Go to Screen 1</Text>
-            </Pressable>
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={{ paddingHorizontal: 16 }}
-              pagingEnabled
-            >
-              {imagUrl.map(item => (
-                <Image
-                  key={item.id}
-                  source={{ uri: item.url }}
-                  resizeMode="stretch"
-                  fadeDuration={300}
-                  style={styles.rowImage}
-                />
-              ))}
-            </ScrollView>
-            <View style={styles.usersHeader}>
-              <Text style={[styles.usersHeaderText, { color: theme.text }]}>
-                USERS DATA
-              </Text>
-            </View>
-          </>
-        }
-      />
+          ))}
+        </ScrollView>
+      </>
     </SafeAreaView>
   );
 };
@@ -142,6 +130,7 @@ const styles = StyleSheet.create({
   s1Button: {
     backgroundColor: '#382a2a',
     margin: 32,
+    paddingHorizontal:16,
     alignItems: 'center',
     borderRadius: 8,
     paddingVertical: 16,

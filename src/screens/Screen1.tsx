@@ -14,7 +14,7 @@ const Screen1 = () => {
   const { theme } = useAppTheme();
   const [query, setQuery] = useState('');
 
-  const debounceQuery = useDebounce(query, 1000);
+  const debounceQuery = useDebounce(query, 500);
 
   useEffect(() => {
     if (debounceQuery) {

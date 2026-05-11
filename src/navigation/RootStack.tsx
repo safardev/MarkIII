@@ -4,6 +4,7 @@ import Home from '../screens/Home';
 import Setting from '../screens/Settings';
 import Screen1 from '../screens/Screen1';
 import BottomTabs from './BottomTabs';
+import Users from '../screens/Users';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,13 @@ const RootStack = () => {
         component={Home}
         options={{
           title: 'Home',
+        }}
+      />
+      <Stack.Screen
+        name="Users"
+        component={Users}
+        options={{
+          title: 'Users',
         }}
       />
       <Stack.Screen
