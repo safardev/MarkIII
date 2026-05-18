@@ -10,4 +10,8 @@ const fetchUsers = async () => {
 };
 
 export const useUsers = () =>
-  useQuery({ queryKey: ['users'], queryFn: fetchUsers });
+  useQuery({
+    queryKey: ['users'],
+    queryFn: fetchUsers,
+    // staleTime: 1000 * 60 * 10,
+  });
